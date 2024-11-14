@@ -1,7 +1,7 @@
 import TryCatch from "../middleware/TryCatch.js";
 import { Courses } from "../models/courses.js";
 import { Lecture } from "../models/Lectures.js";
-import User from "../models/user.js";
+import User from "../models/User.js";
 
 export const getAllCourses=TryCatch(async(req,res)=>{
   const courses=await Courses.find();
