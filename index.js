@@ -15,7 +15,8 @@ dotenv.config();
 
 const app=express();
 app.use(cors({
-    origin: "https://elearning-frontend-x1kn.vercel.app", credentials: true,methods:["GET","POST","DELETE","PUT"]
+    origin:["https://elearning-frontend-x1kn.vercel.app",
+  "https://elearning-frontend-psi.vercel.app",], credentials: true,methods:["GET","POST","DELETE","PUT"]
 }));
 
 app.use(express.json());
